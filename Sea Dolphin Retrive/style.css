@@ -1,0 +1,85 @@
+/* Add styles for the header */
+.header {
+    background-color: #007ACC;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Add styles for content container */
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Add styles for buttons */
+  button {
+    background-color: #007ACC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  button:hover {
+    background-color: #005a8c;
+  }
+  
+  /* Add styles for icons */
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  /* Folder styling */
+  .folderItem {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .folderItem:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Delete button styling */
+  .deleteButton {
+    background-color: #FF5252;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .deleteButton:hover {
+    background-color: #FF0000;
+  }
+  
+  /* Collapsible content */
+  .collapsible-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  

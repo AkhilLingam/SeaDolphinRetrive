@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SeaDolphinRetrieve</title>
+  <!-- Link to Google Fonts for an aesthetic font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+  <!-- Link to Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    /* Set a sea background image */
+    body {
+      background-image: url('sea_background.jpg'); /* Replace 'sea_background.jpg' with your actual image file */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    /* Folder styling */
+    .folderItem {
+      list-style-type: none;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      margin: 5px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Open Sans', sans-serif; /* Apply the Google Font */
+    }
+
+    .folderItem:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Delete button styling */
+    .deleteButton {
+      background-color: #FF5252;
+      color: white;
+      border: 1px solid #FF0000; /* Added border */
+      border-radius: 3px;
+      cursor: pointer;
+      padding: 4px 8px; /* Reduced padding */
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    .deleteButton:hover {
+      background-color: #FF0000;
+    }
+
+    /* Collapsible content */
+    .collapsible-content {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-family: 'Open Sans', sans-serif; /* Apply the Google Font */
+    }
+
+    /* Button styling */
+    .button {
+      background-color: #0074d9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 6px 12px; /* Smaller padding */
+      margin: 5px;
+      font-size: 14px; /* Smaller font size */
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Button icons */
+    .button i {
+      margin-right: 5px;
+    }
+
+    /* Input styling */
+    input[type="text"],
+    textarea {
+      padding: 10px;
+      font-family: 'Open Sans', sans-serif; /* Apply the Google Font */
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to SeaDolphinRetrieve</h1>
+  <p>Your trusted Chrome extension for secure data storage and retrieval.</p>
+  <input type="text" id="folderName" placeholder="Enter folder name">
+  <textarea id="notes" placeholder="Enter your notes here"></textarea>
+  <button id="save" class="button"><i class="fas fa-save"></i> Save</button>
+  <button id="clear" class="button"><i class="fas fa-trash"></i> Clear</button>
+  <input type="text" id="searchBar" placeholder="Search folders">
+  <button id="search" class="button"><i class="fas fa-search"></i> Search</button>
+  <ul id="folderList"></ul>
+  <div id="folderInfo" class="collapsible-content"></div> <!-- Collapsible folder information -->
+  <script src="popup.js"></script>
+</body>
+</html>
